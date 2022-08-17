@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+
+body {
+  line-height: 1.67;
+  letter-spacing: .69;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-family: 'Roboto', sans-serif;
+  @apply tracking-wide
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  text-decoration: underline;
+}
+h2 {
+  @apply text-3xl md:text-4xl text-center text-gray-800 font-semibold
+}
+img {
+  width: 100%;
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link {
+  @apply   text-stone-600 hover:text-zinc-700 font-semibold px-4 capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-section {
+  background-image: linear-gradient(to right, #fffffc, #ffefe8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-image {
+  border-bottom-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+
+.trade-mark-section {
+  background-image: linear-gradient(to right, #fffffc, #ffefe8);
+
+}
+
+.trade-mark-card {
+  @apply flex items-center justify-center  bg-white shadow-md  hover:shadow-sm border px-6 py-2 rounded-xl
+}
+
+.testimony-image {
+  @apply w-20 h-20;
+
+  border-radius: 50%;
 }
