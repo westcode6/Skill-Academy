@@ -71,14 +71,14 @@ export default function Courses() {
 
   return (
     <>
-      <section className=" px-6 md:px-16 py-12 bg-gray-50">
+      <section className=" px-6 sm:px-8 md:px-8 lg:px-16 py-12 bg-gray-50">
         <h2 className="">Explore Popular Courses</h2>
 
         <div className="mt-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 md:gap-20">
             {courses.map((each) => (
               <div
-                className="mt-6 bg-white hover:shadow-xl cursor-pointer rounded-b-md  pb-4"
+                className="mt-6 bg-white hover:shadow-xl cursor-pointer rounded-b-md  pb-4 transform transition hover:-translate-y-0.5"
                 key={each.id}
               >
                 <img
@@ -92,14 +92,14 @@ export default function Courses() {
                   </h3>
                   <div className="flex items-center justify-between">
                     <div className="mt-6 flex">
-                      <p className="flex items-center text-xs md:text-sm">
+                      <p className="flex items-center text-xs">
                         <span className="text-xl text-indigo-600 pr-3">
                           <BiTime />
                         </span>
                         {each.time}
                       </p>
 
-                      <p className="pl-4 md:pl-8 flex items-center text-xs md:text-sm">
+                      <p className="pl-4  flex items-center text-xs ">
                         <span className="text-sm text-indigo-600 px-3">
                           <FaUserAlt />{" "}
                         </span>
@@ -108,21 +108,21 @@ export default function Courses() {
                       </p>
                     </div>
 
-                    <button className="px-4 py-2 rounded-md bg-indigo-200 text-gray-700 text-sm font-semibold mt-4">
+                    <button className="px-4 py-2 rounded-md bg-indigo-200 text-gray-700 text-xs font-semibold mt-4">
                       Best Seller
                     </button>
                   </div>
 
                   <div className="mt-6 flex items-center justify-between">
                     <div className="flex items-center">
-                      <p className=" font-bold text-gray-800">{each.price}</p>
-                      <span className="px-4 text-gray-400 font-bold">
+                      <p className=" font-bold text-sm text-gray-800">{each.price}</p>
+                      <span className="px-4 text-sm text-gray-400 font-bold">
                         {each.discount}
                       </span>
                     </div>
 
                     <div className="flex items-center">
-                      <p>{each.rating}</p>
+                      <p className="text-sm">{each.rating}</p>
 
                       <div className="pl-4 flex space-x-1">
                         <span className="text-amber-500 text-xl">
