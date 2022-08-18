@@ -38,7 +38,7 @@ export default function Footer() {
             </ul>
         </div>
 
-        <div className="flex lg:flex-col lg:space-y-6 text-sm text-indigo-600 font-semibold">
+        <div className="flex space-x-4 lg:flex-col lg:space-y-6 text-sm text-indigo-600 font-semibold">
             <span className="text-2xl"><FaFacebook /></span>
             <span className="text-2xl"><FaInstagramSquare /></span>
             <span className="text-2xl"><FaLinkedin /></span>

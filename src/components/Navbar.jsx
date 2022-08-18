@@ -1,16 +1,18 @@
 export default function Navbar() {
   const $ = (el) => document.getElementById(el);
 
-  const mobileNav = $("mobileNav");
-  const mobileNavMenu = $("mobileNavMenu");
+
 
   function showNav() {
-
+    const mobileNav = $("mobileNav");
+  const mobileNavMenu = $("mobileNavMenu");
     mobileNav.classList.toggle("hidden");
     mobileNavMenu.classList.toggle("hidden");
   }
 
   function hideMobileNav(){
+    const mobileNav = $("mobileNav");
+  const mobileNavMenu = $("mobileNavMenu");
     mobileNav.classList.add("hidden");
     mobileNavMenu.classList.add("hidden");
 
@@ -19,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       <div className="md:mb-0">
-        <nav className="w-full fixed z-30 px-4 md:px-16 py-5 bg-white shadow-sm md:flex items-center justify-between">
+        <nav className="w-full fixed z-30 px-6 md:px-16 py-5 bg-white shadow-sm md:flex items-center justify-between">
           <div className="w-full flex items-center justify-between">
             <a
               href="/"

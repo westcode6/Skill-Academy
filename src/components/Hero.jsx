@@ -3,7 +3,7 @@ import {GoSearch} from "react-icons/go"
 export default function Hero() {
   return (
     <>
-      <section className="hero-section px-6 pt-28 md:pt-32 md:px-16  md:flex items-center justify-center">
+      <section className="hero-section px-6 pt-32 md:pt-32 md:px-16  md:flex items-center justify-center">
        <div className="lg:flex items-center justify-center ">
        <div className="lg::w-2/3  flex flex-col md:items-center md:justify-center">
           <div className="lg:mr-44 md:text-center lg:text-left">
