@@ -2,11 +2,11 @@ export default function BlogPost() {
   const blogs = [
     {
       id: 1,
-      image: "./images/student1.avif",
+      image: "./images/trust.webp",
       date: "November 12",
       noOfComment: 14,
       title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat facere veniam nemo voluptate dolore. Id asperiores labore veniam placeat. ",
+      body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat ",
     },
 
     {
@@ -15,17 +15,45 @@ export default function BlogPost() {
       date: "September 16",
       noOfComment: 24,
       title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat facere veniam nemo voluptate dolore. Id asperiores labore veniam placeat.",
+      body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat ",
     },
 
     {
       id: 3,
-      image: "./images/workers.avif",
+      image: "./images/ads.jpg",
       date: "October 22",
       noOfComment: 17,
       title: "Lorem ipsum dolor sit amet consectetur adipisicing",
-      body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat facere veniam nemo voluptate dolore. Id asperiores labore veniam placeat.",
+      body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat ",
     },
+
+    {
+        id: 4,
+        image: "./images/serious.jpg",
+        date: "October 22",
+        noOfComment: 17,
+        title: "Lorem ipsum dolor sit amet consectetur adipisicing",
+        body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat ",
+      },
+
+
+      {
+        id: 5,
+        image: "./images/smile.jpg",
+        date: "October 22",
+        noOfComment: 17,
+        title: "Lorem ipsum dolor sit amet consectetur adipisicing",
+        body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat ",
+      },
+
+      {
+        id: 6,
+        image: "./images/student.avif",
+        date: "October 22",
+        noOfComment: 17,
+        title: "Lorem ipsum dolor sit amet consectetur adipisicing",
+        body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque tempore quaerat ",
+      },
   ];
   return (
     <>
@@ -33,10 +61,10 @@ export default function BlogPost() {
         <h2>Our Latest Blog</h2>
         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 md:gap-20 mt-8">
           {blogs.map((each) => (
-            <div key={each.id} className="bg-white shadow rounded-xl cursor-pointer my-4 transform transition hover:-translate-y-0.5">
+            <div key={each.id} className="bg-white shadow p-4 rounded-xl cursor-pointer my-4 transform transition hover:-translate-y-0.5">
               <img
                 src={each.image}
-                className="h-44 rounded-t-xl shadow-lg object-cover object-center"
+                className="h-44 rounded-xl shadow-lg object-cover object-center"
                 alt="blog post banner"
               />
               <div className="px-4 py-8">
@@ -49,7 +77,7 @@ export default function BlogPost() {
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold mt-4">{each.title}</h3>
-                <p className="py-4  leading-7">{each.body}</p>
+                <p className="py-4 text-gray-500 leading-7">{each.body}</p>
 
                 <h4 className="text-sm text-indigo-600 font-semibold">
                   Read More

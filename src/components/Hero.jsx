@@ -11,7 +11,7 @@ export default function Hero() {
               Find Our Best Online Courses & Learn More
             </h1>
 
-            <p className="text-base md:text-lg text-gray-600 mt-8">
+            <p className="text-base md:text-lg text-gray-600 mt-8 lg:pr-20">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.Molestias
               distinctio minima  voluptatem debitis deserunt! Aperiam pariatur
               odit reprehenderit ipsum id.

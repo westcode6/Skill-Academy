@@ -12,6 +12,7 @@ p {
 
 a:hover {
   text-decoration: underline;
+
 }
 h2 {
   @apply text-2xl md:text-3xl text-center text-gray-800 font-semibold

@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Link } from "react-router-dom";
 export default function Navbar() {
   const $ = (el) => document.getElementById(el);
 
@@ -45,26 +46,25 @@ export default function Navbar() {
           <div className="hidden lg:block w-full">
             <div className="w-full flex items-center justify-end">
               <ul className="flex">
-                <li>
-                  <a href="##" className="nav-link">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="##" className="nav-link">
-                    Course
-                  </a>
-                </li>
-                <li>
-                  <a href="##" className="nav-link">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="##" className="nav-link">
-                    Login
-                  </a>
-                </li>
+              <Link to="/">
+                <p className="nav-link">Home</p>
+              </Link>
+
+              <Link to="/about">
+                <p className="nav-link">About</p>
+              </Link>
+
+              <Link to="/courses">
+                <p className="nav-link">Courses</p>
+              </Link>
+
+              <Link to="/blogs">
+                <p className="nav-link">Blog</p>
+              </Link>
+              <Link to="/login">
+                <p className="nav-link">Login</p>
+              </Link>
+
               </ul>
               <button className="px-6  py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-md font-semibold rounded-md shadow-md transform transition hover:-translate-x-1">
                 Sign up
@@ -80,26 +80,24 @@ export default function Navbar() {
           <section id="mobileNavMenu"   className="w-60 h-screen hidden absolute bg-indigo-700 z-20">
             <div className=" flex flex-col items-center animate__animated  animate__delay-4s animate__slower animate__bounceInLeft py-10">
               <ul className="flex flex-col text-center space-y-6 pt-28 ">
-                <li>
-                  <a href="##" className=" mobile-nav-link">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="##" className="mobile-nav-link">
-                    Course
-                  </a>
-                </li>
-                <li>
-                  <a href="##" className="mobile-nav-link">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="##" className="mobile-nav-link">
-                    Login
-                  </a>
-                </li>
+              <Link to="/">
+                <p className="mobile-nav-link">Home</p>
+              </Link>
+
+              <Link to="/about">
+                <p className="mobile-nav-link">About</p>
+              </Link>
+
+              <Link to="/courses">
+                <p className="mobile-nav-link">Courses</p>
+              </Link>
+
+              <Link to="/blogs">
+                <p className="mobile-nav-link">Blog</p>
+              </Link>
+              <Link to="/login">
+                <p className="mobile-nav-link">Login</p>
+              </Link>
               </ul>
               <button className="px-6 py-3 mt-6 bg-indigo-600 hover:bg-indigo-500 text-white text-md font-semibold rounded-md shadow-2xl hover:shadow-sm transform transition hover:-translate-y-1">
                 Sign up

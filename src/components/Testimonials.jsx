@@ -35,7 +35,7 @@ export default function Testimonials() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 md:px-16 lg:px-24 gap-3 md:gap-12 mt-12">
             {Testimonials.map((each) => (
-              <div key={each.id} className="bg-white shadow rounded-xl   px-6 md:px-8 lg:px-20 py-4  mt-2">
+              <div key={each.id} className="bg-white shadow-xl hover:shadow-md rounded-xl   px-6 md:px-8 lg:px-20 py-4  mt-2">
                 <img
                   src={each.image}
                   className="testimony-image w-32 rounded-full border shadow-md object-cover object-center"

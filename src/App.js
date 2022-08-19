@@ -1,23 +1,26 @@
+// import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import { About } from "./pages/About";
+import Blogs from "./pages/Blogs";
+import { CoursesPage } from "./pages/Course";
+import './index.css';
 import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import TradeMark from './components/TradeMark';
-import Courses from './components/Courses';
-import Testimonials from './components/Testimonials';
-import BlogPost from './components/BlogPost';
-import Footer from './components/Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <TradeMark />
-      <Courses />
-      <Testimonials />
-      <BlogPost />
-      <Footer />
-    </div>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/blogs" element={<Blogs />} />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 

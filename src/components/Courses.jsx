@@ -71,22 +71,25 @@ export default function Courses() {
 
   return (
     <>
-      <section className=" px-6 sm:px-8 md:px-8 lg:px-16 py-12 bg-gray-50">
+      <section className=" px-6 sm:px-8 md:px-8 lg:px-16 py-12">
+        <div className="text-center">
         <h2 className="">Explore Popular Courses</h2>
+        <p className="text-base text-gray-500  mt-4 ">Explore thousands of hands-on creative classes.</p>
+        </div>
 
         <div className="mt-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 md:gap-20">
             {courses.map((each) => (
               <div
-                className="mt-6 bg-white hover:shadow-xl cursor-pointer rounded-b-md  pb-4 transform transition hover:-translate-y-0.5"
+                className="mt-8 bg-white shadow-md hover:shadow-xl cursor-pointer rounded-xl  pb-4 p-4 transform transition hover:-translate-y-0.5"
                 key={each.id}
               >
                 <img
                   src={each.image}
                   alt={each.title}
-                  className="object-cover object-center h-60 rounded-t-2xl shadow-sm"
+                  className="object-cover object-center h-44 shadow-md rounded-2xl "
                 />
-                <div className="px-4">
+                <div className="">
                   <h3 className="text-xl md:text-xl font-semibold capitalize tracking-wide mt-6">
                     {each.title}
                   </h3>
